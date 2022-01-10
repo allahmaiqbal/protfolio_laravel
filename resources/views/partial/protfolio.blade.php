@@ -3,6 +3,7 @@
 
 
  <!--Portfolio-->
+ @section('title', "protfilio")
  <section id="portfolio" class="container section">
     <div class="row">
         <div class="col-md-12">

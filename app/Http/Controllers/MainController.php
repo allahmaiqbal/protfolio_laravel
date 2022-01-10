@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HelloController extends Controller
+class MainController extends Controller
 {
     public function hello() {
         $data = [
@@ -28,10 +28,8 @@ class HelloController extends Controller
              'address' =>'dhaka,bangladesh'
             
         ];
-        
-
-        
-
+    
+    
         return view('welcome', compact('data','data2'));
     }
 }

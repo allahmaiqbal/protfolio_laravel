@@ -1,8 +1,8 @@
 @extends('layout.app')
 
-@section('title', "Hello")
+@section('title', "")
 
-@section('content')
+ @section('content')
     {{-- main menu --}}
     @include('partial.menu')
 
@@ -38,14 +38,9 @@
         </div>
     </header>
     <!--Header-->
-    @include('partial.resume') 
+    @include('partial.hello')
+    @include('partial.resume')
     @include('partial.protfolio')
     @include('partial.contact')
-
-
-   
-    
-
-    
     
 @endsection

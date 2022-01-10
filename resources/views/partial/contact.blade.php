@@ -53,7 +53,7 @@
                     </form>
                 </div>
                 <div class="footer">
-                    <p>© 2019 Maruf Hasan. All Rights Reserved</p>
+                    <p>© {{ $data2['profile_name']}} All Rights Reserved</p>
                 </div>
             </div>
         </div>
