@@ -1,7 +1,4 @@
-
-
-
- <!--Contact-->
+<!--Contact-->
  <div class="background" style="background-image: url(assets/img/img_bg_main.jpg)">
     <div id="contact" class="container section">
         <div class="row">

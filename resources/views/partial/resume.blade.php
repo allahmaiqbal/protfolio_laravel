@@ -1,5 +1,7 @@
 
-
+{{-- {{ print_r($my_pro['OTHERS_SKILLS']['language']) }} --}}
+{{-- {{ print_r($my_edu['hsc']['start_year']) }} --}}
+{{-- {{ print_r($employment['job_1']['company_name']) }} --}}
 
  <!--Resume-->
  <section id="resume" class="container section">
@@ -19,33 +21,32 @@
         <div class="col-md-8 section__resume resume-list">
             <h3 class="resume-list_title">Education</h3>
             <div class="resume-list__block">
-                <p class="resume-list__block-title"><a target="_blank" href="https://bup.edu.bd/">Bangladesh University of Professionals (BUP)</a></p>
-                <p class="resume-list__block-date">2021 - Running</p>
+                <p class="resume-list__block-title"><a target="_blank" href="https://bup.edu.bd/">{{$my_edu['masters']['institute_name']}}</a></p>
+                <p class="resume-list__block-date">{{$my_edu['masters']['start_year']}} -{{$my_edu['masters']['end_year']}}</p>
                 <p class="education_details">
-                    <a target="_blank" href="https://bup.edu.bd/programs/23/details-academics?program_type=graduate_program">M.Sc. in Information and Communication Technology
-
-(MICT)</a>
+                    <a target="_blank" href="https://bup.edu.bd/programs/23/details-academics?program_type=graduate_program">{{$my_edu['masters']['cirtification_name']}}</a>
+                                                                                                                                                                               
                 </p>
             </div>
             <div class="resume-list__block">
-                <p class="resume-list__block-title"><a target="_blank" href="http://www.bu.edu.bd">Bangladesh University</a></p>
-                <p class="resume-list__block-date">2016 - 2020</p>
+                <p class="resume-list__block-title"><a target="_blank" href="http://www.bu.edu.bd">{{$my_edu['honours']['institute_name']}}</a></p>
+                <p class="resume-list__block-date">{{$my_edu['honours']['start_year']}} - {{$my_edu['honours']['end_year']}}</p>
                 <p class="education_details">
-                    <a target="_blank" href="https://en.wikipedia.org/wiki/Computer_Science_and_Engineering">Computer Science And Engineering (CSE)</a>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Computer_Science_and_Engineering">{{$my_edu['honours']['cirtification_name']}} </a>
                 </p>
             </div>
             <div class="resume-list__block">
-                <p class="resume-list__block-title"><a target="_blank" href="https://rumdo.edu.bd/">Rumdo Institute of Modern Technology</a></p>
-                <p class="resume-list__block-date">2011 - 2015</p>
+                <p class="resume-list__block-title"><a target="_blank" href="https://rumdo.edu.bd/">{{$my_edu['hsc']['institute_name']}}</a></p>
+                <p class="resume-list__block-date">{{$my_edu['hsc']['start_year']}} - {{$my_edu['hsc']['end_year']}}</p>
                 <p class="education_details">
-                    <a target="_blank" href="https://rumdo.edu.bd/">Diploma Engineering in Computer Technology</a>
+                    <a target="_blank" href="https://rumdo.edu.bd/">{{$my_edu['hsc']['cirtification_name']}}</a>
                 </p>
             </div>
             <div class="resume-list__block">
-                <p class="resume-list__block-title">Nabarun Bidyaniketon, Muktagacha</p>
-                <p class="resume-list__block-date">2006 - 2011</p>
+                <p class="resume-list__block-title">{{$my_edu['ssc']['institute_name']}}</p>
+                <p class="resume-list__block-date">{{$my_edu['ssc']['start_year']}} - {{$my_edu['ssc']['end_year']}}</p>
                 <p>
-                    Secondary School Certificate Examination
+                    {{$my_edu['ssc']['cirtification_name']}}
                 </p>
             </div>
         </div>
@@ -56,21 +57,21 @@
             <h3 class="resume-list_title">employment</h3>
             
             <div class="resume-list__block">
-                <p class="resume-list__block-title"><a href="https://maxsop.com/">MaxSOP</a></p>
-                <p class="resume-list__block-date">2019 - Cont.</p>
-                <p>Senior Web Developer</p>
+                <p class="resume-list__block-title"><a href="https://maxsop.com/">{{$employment['job_3']['company_name']}}</a></p>
+                <p class="resume-list__block-date">{{$employment['job_3']['start_year']}} - {{$employment['job_3']['end_year']}} </p>
+                <p>{{$employment['job_3']['positon']}}</p>
             </div>
             
             <div class="resume-list__block">
-                <p class="resume-list__block-title"><a href="http://usitsolution.net/">US IT Solution</a></p>
-                <p class="resume-list__block-date">2018 - 2019</p>
-                <p>Backend Developer</p>
+                <p class="resume-list__block-title"><a href="http://usitsolution.net/">{{$employment['job_2']['company_name']}} </a></p>
+                <p class="resume-list__block-date">{{$employment['job_2']['start_year']}}  - {{$employment['job_2']['end_year']}} </p>
+                <p>{{$employment['job_2']['positon']}} </p>
             </div>
             
             <div class="resume-list__block">
-                <p class="resume-list__block-title"><a href="https://freelanceitlab.com/">Freelance IT Lab</a></p>
-                <p class="resume-list__block-date">2016 - 2018</p>
-                <p>Full Stack Developer</p>
+                <p class="resume-list__block-title"><a href="https://freelanceitlab.com/">{{$employment['job_1']['company_name']}}</a></p>
+                <p class="resume-list__block-date">{{$employment['job_1']['start_year']}}  - {{$employment['job_1']['end_year']}} </p>
+                <p>{{$employment['job_1']['positon']}} </p>
             </div>
         </div>
     </div>
@@ -81,31 +82,31 @@
         <div class="col-md-5 mr-auto">
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">html5</span>
-                    <span class="progress-list__skill-value">90%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_1']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_1']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_FRONTEND']['skill_1']}}" aria-valuemin="0" aria-valuemax="100" >
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">css3</span>
-                    <span class="progress-list__skill-value">70%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_2']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_2']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_FRONTEND']['skill_2']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">bootstrap 3</span>
-                    <span class="progress-list__skill-value">80%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_3']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_3']}}</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_FRONTEND']['skill_3']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
@@ -113,41 +114,41 @@
         <div class="col-md-5 mr-auto">
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">java script</span>
-                    <span class="progress-list__skill-value">90%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_4']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_4']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_FRONTEND']['skill_4']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">jquery</span>
-                    <span class="progress-list__skill-value">80%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_5']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_5']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_FRONTEND']['skill_5']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">Vue JS</span>
-                    <span class="progress-list__skill-value">70%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_6']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_6']}}</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_FRONTEND']['skill_6']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">Angular JS</span>
-                    <span class="progress-list__skill-value">70%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_7']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_7']}}</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_FRONTEND']['skill_7']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
@@ -160,31 +161,31 @@
         <div class="col-md-5 mr-auto">
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">PHP</span>
-                    <span class="progress-list__skill-value">80%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_SERVER_SIDE']['language_1']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_1']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_1']}}" aria-valuemin="0" aria-valuemax="100" >
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">My Sql</span>
-                    <span class="progress-list__skill-value">60%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_SERVER_SIDE']['language_2']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_2']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_2']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">Laravel</span>
-                    <span class="progress-list__skill-value">70%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_SERVER_SIDE']['language_3']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_3']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_3']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
@@ -192,11 +193,11 @@
         <div class="col-md-5 mr-auto">
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">Codeigniter</span>
-                    <span class="progress-list__skill-value">90%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_SERVER_SIDE']['language_4']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_4']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['SKILLS_SERVER_SIDE']['skill_4']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>
@@ -209,21 +210,21 @@
         <div class="col-md-5 mr-auto">
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">Adobe Photoshop</span>
-                    <span class="progress-list__skill-value">50%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['SKILLS_FRONTEND']['language_1']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['SKILLS_FRONTEND']['skill_1']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" >
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['OTHERS_SKILLS']['skill_1']}}" aria-valuemin="0" aria-valuemax="100" >
                     </div>
                 </div>
             </div>
             <div class="progress-list__skill">
                 <p>
-                    <span class="progress-list__skill-title">Adobe Illustrator</span>
-                    <span class="progress-list__skill-value">50%</span>
+                    <span class="progress-list__skill-title">{{ $progress_bar['OTHERS_SKILLS']['language_2']}}</span>
+                    <span class="progress-list__skill-value">{{ $progress_bar['OTHERS_SKILLS']['skill_2']}}%</span>
                 </p>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{ $progress_bar['OTHERS_SKILLS']['skill_2']}}" aria-valuemin="0" aria-valuemax="100">
                     </div>
                 </div>
             </div>

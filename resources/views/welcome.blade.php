@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', "")
+@section('title', "name")
 
  @section('content')
     {{-- main menu --}}
@@ -38,9 +38,23 @@
         </div>
     </header>
     <!--Header-->
+   
+    {{-- ,['my_pro' => $progress_bar] --}}
+
     @include('partial.hello')
-    @include('partial.resume')
-    @include('partial.protfolio')
+    @include('partial.resume', ['my_edu' => $educations, 'progress_bar' => $progress_bar,'employment'=>$employment]) 
+    @include('partial.protfolio'),
     @include('partial.contact')
     
 @endsection
+
+{{-- 
+@foreach($educations as $education=>$key)
+    <p>{{$education}}</p>
+
+    @foreach ($key as $item=>$list)
+
+    @endforeach
+@endforeach --}}
+
+{{-- {{ print_r($progress_bar['SKILLS_FRONTEND']['skill'])}} --}}

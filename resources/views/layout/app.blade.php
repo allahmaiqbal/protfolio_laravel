@@ -6,7 +6,7 @@
 
   <body>
 
-     {{-- @include('partial.hello')
+     {{-- @include('partial.hello') 
 
      @include('partial.resume')
 

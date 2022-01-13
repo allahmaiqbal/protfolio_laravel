@@ -22,7 +22,7 @@ use App\Http\Controllers\MainController;
 //     return view('welcome');
 // });
 Route::get('/',[MainController::class,'hello']);
-// Route::get('/resumepage',[ResumeController::class,'resume']);
+// Route::get('/resumepage',[ResumeController::class,'menu']);
 // Route::get('/protfoliotpage',[ProtfolioController::class,'protfilio']);
 //Route::get('/contactpage',[ContactController::class,'contact']);
 
