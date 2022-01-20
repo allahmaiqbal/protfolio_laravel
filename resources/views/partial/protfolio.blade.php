@@ -1,6 +1,6 @@
 
 
-
+{{ print_r($my_prot['project_1']['project_title'])}} 
 
  <!--Portfolio-->
  @section('title', "protfilio")
@@ -25,48 +25,48 @@
     <div class="portfolio-cards">
         <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="e_commerce">
             <div class="col-md-6 col-lg-5 project-card__img">
-                <img class="" src="assets/img/pizzahouse.png" alt="project-img">
+                <img class="" src="{{$my_prot['project_1']['project_image']}}" alt="project-img">
             </div>
             <div class="col-md-6 col-lg-7 project-card__info">
-                <h3 class="project-card__title">Restaurent Based E-Commerce Website</h3>
+                <h3 class="project-card__title">{{$my_prot['project_1']['project_title']}}</h3>
                 <p class="project-card__description">
-                    It's a restaurent based e-commerce website developed by me for <a href="http://usitsolution.net">USIT Solution LLC</a>.
+                    It's a restaurent based e-commerce website developed by me for <a href="{{$my_prot['project_1']['project_description_link']}}">{{$my_prot['project_1']['project_description_name']}}</a>.
                     I lead and developed this projet with my own hand, DB Design and Backend Development was my main responsibility on it.
                 </p>
                 <p class="project-card__stack">Used stack:</p>
                 <ul class="tags">
-                    <li>html5</li>
-                    <li>css3</li>
-                    <li>JQuery</li>
-                    <li>PHP (Laravel)</li>
-                    <li>AngularJS</li>
-                    <li>MySql</li>
+                    <li>{{$my_prot['project_1']['language_1']}}</li>
+                    <li>{{$my_prot['project_1']['language_2']}}</li>
+                    <li>{{$my_prot['project_1']['language_3']}}</li>
+                    <li>{{$my_prot['project_1']['language_4']}}</li>
+                    <li>{{$my_prot['project_1']['language_5']}}</li>
+                    <li>{{$my_prot['project_1']['language_6']}}</li>
                 </ul>
-                <a href="https://pizzahouseusa.com/" class="project-card__link">www.pizzahouseusa.com</a>
+                <a href="{{$my_prot['project_1']['project_link']}}" class="project-card__link">{{$my_prot['project_1']['project_name']}}</a>
             </div>
         </div>
 
 
         <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="e_commerce">
             <div class="col-md-6 col-lg-5 project-card__img">
-                <img class="" src="assets/img/couscous.png" alt="project-img">
+                <img class="" src="{{$my_prot['project_2']['project_image']}}" alt="project-img">
             </div>
             <div class="col-md-6 col-lg-7 project-card__info">
-                <h3 class="project-card__title">Restaurent Based E-Commerce Website</h3>
+                <h3 class="project-card__title">{{$my_prot['project_2']['project_title']}}</h3>
                 <p class="project-card__description">
-                    It's a restaurent based e-commerce website developed by me for <a href="http://usitsolution.net">USIT Solution LLC</a>.
+                    It's a restaurent based e-commerce website developed by me for <a href="{{$my_prot['project_2']['project_description_link']}}">{{$my_prot['project_2']['project_description_name']}}</a>.
                     I lead and developed this projet with my own hand, DB Design and Backend Development was my main responsibility on it.
                 </p>
                 <p class="project-card__stack">Used stack:</p>
                 <ul class="tags">
-                    <li>html5</li>
-                    <li>css3</li>
-                    <li>JQuery</li>
-                    <li>PHP (Laravel)</li>
-                    <li>AngularJS</li>
-                    <li>MySql</li>
+                    <li>{{$my_prot['project_2']['language_1']}}</li>
+                    <li>{{$my_prot['project_2']['language_2']}}</li>
+                    <li>{{$my_prot['project_2']['language_3']}}</li>
+                    <li>{{$my_prot['project_2']['language_4']}}</li>
+                    <li>{{$my_prot['project_2']['language_5']}}</li>
+                    <li>{{$my_prot['project_2']['language_6']}}</li>
                 </ul>
-                <a href="https://www.couscouscafeokc.com" class="project-card__link">www.couscouscafeokc.com</a>
+                <a href="{{$my_prot['project_2']['project_name']}}" class="project-card__link">{{$my_prot['project_2']['project_link']}}</a>
             </div>
         </div>
 
@@ -74,67 +74,68 @@
     <div class="portfolio-cards">
         <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="dynamic_website">
             <div class="col-md-6 col-lg-5 project-card__img">
-                <img class="" src="assets/img/carplusok.jpg" alt="project-img">
+                <img class="" src="{{$my_prot['project_3']['project_image']}}" alt="project-img">
             </div>
             <div class="col-md-6 col-lg-7 project-card__info">
-                <h3 class="project-card__title">Dynamic Website For USA Old Car Parts Shop</h3>
+                <h3 class="project-card__title">{{$my_prot['project_3']['project_title']}}</h3>
                 <p class="project-card__description">
-                    It's a Dynamic website for old car parts shop developed by me for <a href="http://usitsolution.net">USIT Solution LLC</a>
+                    It's a Dynamic website for old car parts shop developed by me for <a href="{{$my_prot['project_3']['project_description_link']}}">{{$my_prot['project_3']['project_description_name']}}</a>
                 </p>
                 <p class="project-card__stack">Used stack:</p>
                 <ul class="tags">
-                    <li>html5</li>
-                    <li>css3</li>
-                    <li>JQuery</li>
-                    <li>PHP (Laravel)</li>
-                    <li>MySql</li>
+                    <li>{{$my_prot['project_3']['language_1']}}</li>
+                    <li>{{$my_prot['project_3']['language_2']}}</li>
+                    <li>{{$my_prot['project_3']['language_3']}}</li>
+                    <li>{{$my_prot['project_3']['language_4']}}</li>
+                    <li>{{$my_prot['project_3']['language_5']}}</li>
+                    <li>{{$my_prot['project_3']['language_6']}}</li>
                 </ul>
-                <a href="http://carplusok.com/" class="project-card__link">www.carplusok.com</a>
+                <a href="{{$my_prot['project_3']['project_name']}}" class="project-card__link">{{$my_prot['project_3']['project_name']}}</a>
             </div>
         </div>
 
 
         <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="dynamic_website">
             <div class="col-md-6 col-lg-5 project-card__img">
-                <img class="" src="assets/img/twisterokc.jpg" alt="project-img">
+                <img class="" src="{{$my_prot['project_4']['project_image']}}" alt="project-img">
             </div>
             <div class="col-md-6 col-lg-7 project-card__info">
-                <h3 class="project-card__title">Dynamic website for Mobile phone shop</h3>
+                <h3 class="project-card__title">{{$my_prot['project_4']['project_title']}}</h3>
                 <p class="project-card__description">
-                    It's a Dynamic website for mobile phone shop developed by me for <a href="http://usitsolution.net">USIT Solution LLC</a>
+                    It's a Dynamic website for mobile phone shop developed by me for <a href="{{$my_prot['project_4']['project_description_link']}}">{{$my_prot['project_4']['project_description_name']}}</a>
                 </p>
                 <p class="project-card__stack">Used stack:</p>
                 <ul class="tags">
-                    <li>html5</li>
-                    <li>css3</li>
-                    <li>JQuery</li>
-                    <li>PHP (Laravel)</li>
-                    <li>AngularJS</li>
-                    <li>MySql</li>
+                    <li>{{$my_prot['project_4']['language_1']}}</li>
+                    <li>{{$my_prot['project_4']['language_2']}}</li>
+                    <li>{{$my_prot['project_4']['language_3']}}</li>
+                    <li>{{$my_prot['project_4']['language_4']}}</li>
+                    <li>{{$my_prot['project_4']['language_5']}}</li>
+                    <li>{{$my_prot['project_4']['language_6']}}</li>
                 </ul>
-                <a href="https://twisterokc.com/" class="project-card__link">www.twisterokc.com</a>
+                <a href="{{$my_prot['project_4']['project_name']}}" class="project-card__link">{{$my_prot['project_4']['project_name']}}</a>
             </div>
         </div>
 
         <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="dynamic_website">
             <div class="col-md-6 col-lg-5 project-card__img">
-                <img class="" src="assets/img/499.jpg" alt="project-img">
+                <img class="" src="{{$my_prot['project_5']['project_image']}}" alt="project-img">
             </div>
             <div class="col-md-6 col-lg-7 project-card__info">
-                <h3 class="project-card__title">Dynamic Website</h3>
+                <h3 class="project-card__title">{{$my_prot['project_5']['project_title']}}</h3>
                 <p class="project-card__description">
-                    It's a Dynamic website for mobile phone sels and service center developed by me for <a href="http://usitsolution.net">USIT Solution LLC</a>
+                    It's a Dynamic website for mobile phone sels and service center developed by me for <a href="{{$my_prot['project_5']['project_description_link']}}">{{$my_prot['project_5']['project_description_name']}}</a>
                 </p>
                 <p class="project-card__stack">Used stack:</p>
                 <ul class="tags">
-                    <li>html5</li>
-                    <li>css3</li>
-                    <li>JQuery</li>
-                    <li>PHP (Laravel)</li>
-                    <li>AngularJS</li>
-                    <li>MySql</li>
+                    <li>{{$my_prot['project_5']['language_1']}}</li>
+                    <li>{{$my_prot['project_5']['language_2']}}</li>
+                    <li>{{$my_prot['project_5']['language_3']}}</li>
+                    <li>{{$my_prot['project_5']['language_4']}}</li>
+                    <li>{{$my_prot['project_5']['language_5']}}</li>
+                    <li>{{$my_prot['project_5']['language_6']}}</li>
                 </ul>
-                <a href="http://499cellular.com/" class="project-card__link">www.499cellular.com</a>
+                <a href="{{$my_prot['project_4']['project_name']}}" class="project-card__link">{{$my_prot['project_4']['project_name']}}</a>
             </div>
         </div>
 

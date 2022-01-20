@@ -11,18 +11,18 @@
                 <div class="contacts__list">
                     <dl class="contact-list">
                         <dt>Phone:</dt>
-                        <dd><a href="tel:82344563333">+8801735189237</a></dd>
+                        <dd><a href="{{$my_contact['phone_number_link']}}">{{$my_contact['phone_number']}}</a></dd>
                         <dt>Skype:</dt>
-                        <dd><a href="skype:maruf.hasan68">maruf.hasan68</a></dd>
+                        <dd><a href="{{$my_contact['skype_link']}}">{{$my_contact['skype']}}</a></dd>
                         <dt>Email:</dt>
-                        <dd><a href="mailto:emarufhasan@gmail.com">emarufhasan@gmail.com</a></dd>
+                        <dd><a href="{{$my_contact['email_link']}}">{{$my_contact['email']}}</a></dd>
                     </dl>
                 </div>
                 <div class="contacts__social">
                     <ul>
-                        <li><a href="https://facebook.com/emarufhasan">Facebook</a></li>
-                        <li><a href="https://www.linkedin.com/in/maruf-hasan-2283a580">Linkedin</a></li>
-                        <li><a href="https://github.com/marufhasan1">GitHub</a></li>
+                        <li><a href="{{$my_contact['facebook_link']}}">Facebook</a></li>
+                        <li><a href="{{$my_contact['linkedin_link']}}">Linkedin</a></li>
+                        <li><a href="{{$my_contact['github_link']}}">GitHub</a></li>
                         <!-- <li><a href="#">Bitbucket</a></li> -->
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
                     </form>
                 </div>
                 <div class="footer">
-                    <p>© {{ $data2['profile_name']}} All Rights Reserved</p>
+                    <p>© {{ $my_contact['footer_name']}} All Rights Reserved</p>
                 </div>
             </div>
         </div>

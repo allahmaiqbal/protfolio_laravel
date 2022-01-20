@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', "name")
+@section('title', "")
 
  @section('content')
     {{-- main menu --}}
@@ -43,8 +43,8 @@
 
     @include('partial.hello')
     @include('partial.resume', ['my_edu' => $educations, 'progress_bar' => $progress_bar,'employment'=>$employment]) 
-    @include('partial.protfolio'),
-    @include('partial.contact')
+    @include('partial.protfolio',['my_prot'=>$protfoliio])
+    @include('partial.contact',['my_contact'=>$contact])
     
 @endsection
 
@@ -57,4 +57,3 @@
     @endforeach
 @endforeach --}}
 
-{{-- {{ print_r($progress_bar['SKILLS_FRONTEND']['skill'])}} --}}
